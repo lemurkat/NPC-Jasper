@@ -31,15 +31,23 @@ Dwarven artificacts, most Geode Minerals, most Gemstones.
 Heart Events:
 
 2 Hearts:  Enter the second storey of the museum when Jasper is in his rooms.
+
 4 Hearts:  Enter Cindersap Forest when Jasper is roaming the forest.
+
 6 Hearts:  Begins on the farmhouse step. Requires seeing the above two heart events first. Comes in multiple parts and takes at least an ingame month to complete. Once begun the next step should be self explanatory. 
+
 8 Hearts:  Enter the Archaeology House after the 6 heart event has fully played out.
+
 10 Hearts:  Jasper will send you a letter in the mail with the details.
 
 NOTES:
+
 ** Jasper does not become datable until you have seen his 6-heart event. 
+
 ** 14-heart scene not yet written/implemented.
+
 ** Some aspects surrounding the 6-heart event have not been 100% tested since last tweaking.
+
 ** Marriage Dialogue/8-10 heart dialogue is incomplete.
 
 REQUIRES:

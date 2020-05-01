@@ -1,0 +1,50 @@
+{
+"loadLate": true,    
+
+"addMaps": [   
+     
+      {
+        "name": "FairyPool",
+        "file": "assets/FairyPool.tmx"
+      },
+      {
+        "name": "SecretCave",
+        "file": "assets/SecretCave.tmx"
+      }
+    
+  ],
+  
+   "mergeMaps": [
+    {
+      "name": "Woods", 
+    "file": "assets/Woods-Patch.tmx",
+    "position": [0,5] 
+      }
+  ],
+   "onlyWarps":[
+      {
+        "name": "Woods", 
+        "addWarps": [
+          "0 11 FairyPool 39 14 0 12 FairyPool 39 15"
+        ]
+      },
+      {
+        "name": "FairyPool", 
+        "addWarps": [
+          "40 12 Woods 2 11 40 13 Woods 2 11 40 14 Woods 2 12 40 15 Woods 2 12 17 4 SecretCave 8 16"
+        ]
+  
+      },
+    {
+       "name": "SecretCave", 
+       "addWarps": [
+         "8 18 FairyPool 17 6"
+        ]
+  
+      }
+
+
+
+  ]
+  }
+  

@@ -1,0 +1,13 @@
+{
+    "Name": "CP Fairy Pool",
+    "Author": "LemurKat",
+    "Version": "1.0",
+    "Description": "Adds a hidden pool and other surprises",
+    "UniqueID": "LemurKat.FairyPool.CP",
+    "MinimumApiVersion": "1.0",
+        "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"	
+    }
+    
+   
+ }

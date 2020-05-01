@@ -1,0 +1,966 @@
+{
+	"Format": "1.13.0", 
+	"ConfigSchema": {
+		"NewLore": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false
+		}
+		},
+
+"Changes": [
+			
+//NPC Data
+
+{
+	"LogName": "NPC Manifestation",
+	"Action": "EditData",
+	"Target": "Data/NPCDispositions", 
+	"Entries": { 
+		"Jasper": "adult/polite/shy/neutral/male/not-datable/null/Town/fall 8//Museum2 17 4/Jasper"		
+					},
+			"When": {
+				"HasSeenEvent:50709911": false,
+				"HasSeenEvent:50709915": false
+									}
+		},
+{
+	"LogName": "NPC Manifestation - Jasper Gone",
+	"Action": "EditData",
+	"Target": "Data/NPCDispositions", 
+	"Entries": { 
+		"Jasper": "adult/polite/shy/neutral/male/not-datable/null/Town/fall 8//Museum2 23 19/Jasper"		
+					},
+			"When": {
+				"HasSeenEvent:50709911": true,
+				"HasSeenEvent:50709915": false
+					}
+					
+				},		
+{
+	"LogName": "NPC Manifestation - Jasper Returns",
+	"Action": "EditData",
+	"Target": "Data/NPCDispositions", 
+	"Entries": { 
+		"Jasper": "adult/polite/shy/neutral/male/datable/null/Town/fall 8//Museum2 17 4/Jasper"		
+					},
+			"When": {
+				"HasSeenEvent:50709911": true,
+				"HasSeenEvent:50709915": true
+									}
+	},		
+
+//Gift Tastes and other details
+
+{	
+	"LogName": "NPC Gift Tastes",
+	"Action": "EditData",
+	"Target": "Data/NPCGiftTastes",
+	"Entries": {
+		"Jasper": "Thank you! You truly are most generous!/72 82 243 108 121 122 258 613 563 564/Thank you! This shall be excellent for my research./96 97 98 99 459 -2 -12/I'll find a use for this. I guess./440 209/Are you mocking me? Surely this is trash!/346 2/Thank you!//" 
+				      }
+		},
+{
+	"LogName": "Animations",
+	"Action": "EditData",
+	"Target": "Data/animationDescriptions",
+	"Entries": {
+		"Jasper_Booze": "16 17/18 19/17 16/Strings\\animationDescriptions:Jasper_Booze",
+		"Jasper_Read": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22/Strings\\animationDescriptions:Jasper_Read",
+		"Jasper_Sleep": "51/51/51",
+		"Jasper_Exercise": "0/16 16 16 16 17 17 17 17 16 16 16 16 17 17 17 17 16 16 16 16 17 17 17 17 16 16 16 16 16 16 16 16 18 18 18 18 16 16 16 16 18 18 18 18 16 16 16 16 18 18 18 18 16 16 16 16/0"
+	   			}
+		},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Booze": "A toast to our friendship, @!",
+		"Jasper_Read": "Oh, hello there @! I was just reading about the lore of Stardew Valley. But I shan't bore you with details, I'm sure you've better things to do than listen to me rabbit on.$1"
+				}
+		},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "...oh, that's a ridiculous claim! There's no evidence to support it whatsover! Oh, hello @, sorry. Just reading the works of the 'esteemed' Professor Peasbody.$5"
+				},
+			"When": {
+			"Season": "Summer",
+			"HasSeenEvent:50709921": false
+				}	
+		},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "...oh, I suppose... I admit it... There is some value in your claim. Oh hello @. Sorry! I was just reading Cameron's latest 'epiphanies'.$1"
+				},
+			"When": {
+			"Season": "Summer",
+			"HasSeenEvent:50709921": true
+				}	
+		},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "Nothing like indulging in a bit of light reading on a cold winter day. It's my guilty pleasure."
+							},
+			"When": {
+			"Season": "Winter"
+						}
+						},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "Hello @! Have you read Mr. Elliot's book? The writing style is somewhat unsophisticated, but it is quite the page turner!"
+							},
+			"When": {
+				"Season": "Winter",
+				"HasSeenEvent": "1848481"
+							}
+					},
+	
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "Greetings @! I am delving into this fascinating perspective on the Gotoran conflict."
+							},
+			"When": {
+				"Season": "Fall"
+						}
+		},
+
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "Ah, foul weather is a fine excuse to undertake some 'research', don't you think?$1"
+							},
+				"When": {
+					"Weather": "Rain, Storm"
+					}
+},
+{
+	"LogName": "Animation strings",
+	"Action": "EditData",
+	"Target": "Strings/animationDescriptions",
+	"Entries": {
+		"Jasper_Read": "Ah, foul weather is a fine excuse to undertake some 'research', don't you think? Okay, I confess. It is one of Gunther's paperbacks.$3"
+							},
+				"When": {
+					"Weather": "Rain, Storm",
+					"HasSeenEvent:50709911": true
+					}
+},
+
+//Schedule
+
+{
+	"LogName": "Schedule Dialogue", 
+	"Action": "Load",
+	"Target": "Strings/schedules/Jasper",
+	"FromFile": "assets/Schedule/ScheduleDialogue.json"
+		},
+{
+	"LogName": "Schedule - pre-accident", 
+	"Action": "Load",
+	"Target": "Characters/schedules/Jasper",
+	"FromFile": "assets/Schedule/Schedule.json",
+	"When": {
+		"HasSeenEvent:50709911": false
+		}	
+	},
+{
+	"LogName": "Schedule - recovery", 
+	"Action": "Load",
+	"Target": "Characters/schedules/Jasper",
+	"FromFile": "assets/Schedule/Schedule2.json",
+		"When": {
+			"HasSeenEvent:50709915": true,
+			"HasSeenEvent:50709920": false
+			}	
+		},
+{
+	"LogName": "Schedule - final", 
+	"Action": "Load",
+	"Target": "Characters/schedules/Jasper",
+	"FromFile": "assets/Schedule/Schedule3.json",
+		"When": {
+			"HasSeenEvent:50709920": true
+			}	
+		},
+
+		
+//Portraits and Sprites
+
+{
+	"LogName": "Jasper Portraits", 
+	"Action": "Load",
+	"Target": "Portraits/Jasper",
+	"FromFile": "assets/Image/Jasper-portrait.png"		
+		},
+{	"LogName": "Jasper Portraits - wheelchair", 
+	"Action": "EditImage",
+	"Target": "Portraits/Jasper",
+	"FromFile": "assets/Image/Jasper_wheelchair_portrait.png",			
+	"When": {
+				"HasSeenEvent:50709911": true,
+				"HasSeenEvent:50709915": true,
+				"HasSeenEvent:50709930": false
+							}
+			},
+{	"LogName": "Jasper Portrait - prosthetic", 
+	"Action": "EditImage",
+	"Target": "Portraits/Jasper",
+	"FromFile": "assets/Image/Jasper_prosthetic_portrait.png",			
+	"When": {
+				"HasSeenEvent:50709930": true
+										}
+						},
+		
+{		
+	"LogName": "Jasper Sprites", 
+	"Action": "Load",
+	"Target": "Characters/Jasper",
+	"FromFile": "assets/Image/Jasper.png"
+},
+{		
+	"LogName": "Jasper Sprites - Jasper Gone", 
+	"Action": "EditImage",
+	"Target": "Characters/Jasper",
+	"FromFile": "assets/Image/JasperGone.png",			
+		"When": {
+			"HasSeenEvent:50709911": true,
+			"HasSeenEvent:50709915": false
+					}
+	},
+{		
+	"LogName": "Jasper Sprites - wheelchair", 
+	"Action": "EditImage",
+	"Target": "Characters/Jasper",
+	"FromFile": "assets/Image/Jasper-wheelchair.png",			
+		"When": {
+			"HasSeenEvent:50709911": true,
+			"HasSeenEvent:50709915": true,
+			"HasSeenEvent:50709930": false
+							}
+			},
+{		
+	"LogName": "Jasper Sprites - prosthetic", 
+	"Action": "EditImage",
+	"Target": "Characters/Jasper",
+	"FromFile": "assets/Image/Jasper-prosthetic.png",			
+		"When": {
+			"HasSeenEvent:50709930": true
+									}
+					},
+	
+
+// Removing Jasper from festivals when he is absent	
+
+{	"LogName": "Remove Jasper from Egg Festival",
+    "Action": "EditMap",
+    "Target": "Maps/Town-EggFestival",
+    "MapTiles": [
+        {
+            "Position": { "X": 34, "Y": 57 },
+            "Layer": "Set-Up",
+            "Remove": true
+		 }
+		],
+	"When": {
+			"HasSeenEvent:50709911": true,
+			"HasSeenEvent:50700915": false
+						}
+		},
+{	"LogName": "Remove Jasper from Spring Dance",
+	"Action": "EditMap",
+	"Target": "Maps/Forest-Festival",
+	"MapTiles": [
+	{
+		"Position": { "X": 3, "Y": 29 },
+		"Layer": "Set-Up",
+		"Remove": true
+		 },
+	{
+		"Position": { "X": 3, "Y": 29 },
+		"Layer": "MainEvent",
+		"Remove": true
+		 }
+	],
+	"When": {
+		"HasSeenEvent:50709911": true,
+		"HasSeenEvent:50709915": false
+		}
+	},
+{	"LogName": "Remove Jasper from Luau",
+	"Action": "EditMap",
+	"Target": "Maps/Beach-Luau",
+	"MapTiles": [
+	{
+	"Position": { "X": 11, "Y": 39 },
+	"Layer": "Set-Up",
+	"Remove": true
+		 }
+	],
+	"When": {
+		"HasSeenEvent:50709911": true,
+		"HasSeenEvent:50709915": false
+		}
+},
+{	"LogName": "Remove Jasper from Jellies",
+	"Action": "EditMap",
+	"Target": "Maps/Beach-Jellies",
+	"MapTiles": [
+	{
+	"Position": { "X": 88, "Y": 40 },
+	"Layer": "Set-Up",
+	"Remove": true
+		}
+	],
+		"When": {
+				"HasSeenEvent:50709911": true,
+				"HasSeenEvent:50709915": false
+				}
+	},		
+{	"LogName": "Remove Jasper from Fair",
+	"Action": "EditMap",
+	"Target": "Maps/Town-Fair",
+	"MapTiles": [
+		{
+	"Position": { "X": 38, "Y": 77 },
+	"Layer": "Set-Up",
+	"Remove": true
+		}
+	],
+		"When": {
+			"HasSeenEvent:50709911": true,
+			"HasSeenEvent:50709915": false
+						}
+	},	
+{	"LogName": "Remove Jasper from Spirit's Eve",
+	"Action": "EditMap",
+	"Target": "Maps/Town-Halloween",
+	"MapTiles": [
+		{
+		"Position": { "X": 27, "Y": 56 },
+		"Layer": "Set-Up",
+		"Remove": true
+		 }
+		],
+			"When": {
+				"HasSeenEvent:50709911": true,
+				"HasSeenEvent:50709915": false
+							}
+		},
+{	"LogName": "Remove Jasper from Ice Festival",
+	"Action": "EditMap",
+	"Target": "Maps/Forest-IceFestival",
+	"MapTiles": [
+		{
+		"Position": { "X": 10, "Y": 44 },
+		"Layer": "Set-Up",
+		"Remove": true
+				 }
+				],
+					"When": {
+						"HasSeenEvent:50709911": true,
+						"HasSeenEvent:50709915": false
+									}
+				},	
+{	"LogName": "Remove Jasper from Ice Festival",
+	"Action": "EditMap",
+	"Target": "Maps/Town-Christmas",
+	"MapTiles": [
+		{
+		"Position": { "X": 33, "Y": 71 },
+		"Layer": "Set-Up",
+		"Remove": true
+		 }
+	],
+	"When": {
+			"HasSeenEvent:50709911": true,
+			"HasSeenEvent:50709915": false
+													}
+								},		
+
+//Dialogue
+
+{	"LogName": "Rainy Day Dialogue",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/rainy",
+	"Entries": {
+			"Jasper": "The sound of rain upon the roof is so restful, don't you think? A good, do very little kind of day."
+					}
+			},
+{
+	"LogName": "Dialogue", 
+	"Action": "Load",
+	"Target": "Characters/Dialogue/Jasper",
+	"FromFile": "assets/Dialogue/Dialogue-Jasper.json"
+},
+{
+	"LogName": "Recovery Dialogue", 
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jasper",
+	"FromFile": "assets/Dialogue/Recovery.json",
+	"When": {
+		"HasSeenEvent:50709915": true
+					}
+	},
+{
+	"LogName": "RivalHearts Dialogue", 
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jasper",
+	"FromFile": "assets/Dialogue/RivalHearts.json",
+	"When": {
+		"HasSeenEvent:50709921": true
+				}
+		},
+{
+	"LogName": "Jasper has a crush on farmer Dialogue", 
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jasper",
+	"FromFile": "assets/Dialogue/JasperDating.json",
+	"When": {
+		"HasSeenEvent:50709921": true,
+		"Relationship:Jasper": "Dating, Engaged"
+		
+			}
+		},
+{
+	"LogName": "Farmer and Cameron crush Dialogue", 
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jasper",
+	"FromFile": "assets/Dialogue/PolyOptions.json",
+	"When": {
+		"HasSeenEvent:50709921": true,
+		"HasDialogueAnswer": "5070124",
+		"Relationship:Jasper": "Dating, Engaged"
+
+			}
+		},
+
+//Visiting Dr Harvey 
+
+{				
+	"LogName": "Schedule - Visiting Harvey", 
+	"Action": "EditData",
+	"Target": "Characters/schedules/Harvey",
+	"Entries": {
+		"Thu": "730 Hospital 1 5 0/900 Hospital 4 5 1 \"Strings\\schedules\\Harvey:009\"/1250 Hospital 10 14 2/1330 Hospital 5 5 2/1410 Hospital 5 6 3 harvey_examine_left/1550 Hospital 5 5 2/1610 Hospital 4 5 0/1630 Hospital 3 15 0/1800 HarveyRoom 9 5 0/2300 HarveyRoom 13 4 1 harvey_sleep"
+			},
+		"When": {
+		"HasSeenEvent:50709915": true,
+		"HasSeenEvent:50709930": false
+			}	
+},
+{	
+	"LogName": "Schedule Dialogue for Harvey", 
+	"Action": "EditData",
+	"Target": "Strings/schedules/Harvey",
+	"Entries": {
+			"009": "The wound looks to be healing well.$3"
+				}				
+		},
+
+//Temp Actors and locations for Events
+
+{		
+	"LogName": "Amber Junimo Temp Actor", 
+	"Action": "Load",
+	"Target": "Characters/JunimoAmber",
+	"FromFile": "assets/Image/JunimoAmber.png"			
+},
+{
+	"LogName": "Mines map", 
+	"Action": "Load",
+	"Target": "Maps/MineIce",
+	"FromFile": "assets/Image/MineIce.tmx"
+		},
+{
+	"LogName": "Mines map", 
+	"Action": "Load",
+	"Target": "Characters/InjuredJasper",
+	"FromFile": "assets/Image/InjuredJasper.png"
+				},
+{
+	"Action": "Load",
+	"Target": "Characters/Cameron",
+	"FromFile": "assets/Image/Cameron-sprites.png"
+			},
+
+{
+	"Action": "Load",
+	"Target": "Portraits/Cameron",
+	"FromFile": "assets/Image/Cameron-portraits.png"
+			},
+
+{		
+	"LogName": "Jade Junimo Temp Actor", 
+	"Action": "Load",
+	"Target": "Characters/JunimoJade",
+	"FromFile": "assets/Image/JunimoJade.png"			
+},
+
+{
+	"Action": "Load",
+	"Target": "Maps/FairyPoolPicnic",
+	"FromFile": "assets/Image/FairyPoolPicnic.tbin"
+		},
+
+{
+	"Action": "Load",
+	"Target": "Characters/JasperClothes",
+	"FromFile": "assets/Image/clothes.png"
+				},
+{
+	"Action": "Load",
+	"Target": "Characters/Jasper_Swimsuit",
+					"FromFile": "assets/Image/Jasper-swimsuit.png"
+						},
+
+
+
+//Events
+
+{	
+	"LogName": "Cindersap Events", 
+	"Action": "EditData",
+	"Target": "Data/Events/Forest",
+	"Entries": {
+		"50709910/f Jasper 1000/w sunny/p Jasper": "none/83 100/Jasper 77 99 2 farmer 82 97 2/skippable/AddTemporaryActor JunimoAmber 16 32 78 96 2 false/showFrame Jasper 32/pause 1500/move farmer 0 2 3/pause 1500/playSound grassyStep/showFrame Jasper 33/speak Jasper \"Oh, good afternoon, @! 'Tis a lovely day, is it not?\"/pause 500/move farmer -4 0 3/pause 500/showFrame Jasper 4/pause 500/speak Jasper \"I do enjoy taking a walk in the fresh air. Stardew Valley is something special, don't you think?\"/emote farmer 32/pause 500/speak Jasper \"Come, @. Close your eyes.\"/faceDirection Jasper 2/pause 500/showFrame Jasper 32/faceDirection farmer 2/pause 500/speak Jasper \"Breathe deep. Fill your senses with the valley.$3#$b#There is so much life here.$3\"/pause 2000/playSound leafrustle/pause 1500/emote farmer 8/pause 500/faceDirection farmer 3/pause 500/playSound junimoMeep1/pause 500/move JunimoAmber 1 0 2/faceDirection farmer 0/move JunimoAmber 0 2 2/animate JunimoAmber false false 250 20 21 22 23 20 21 22 23/pause 1500/emote farmer 16/pause 1500/faceDirection farmer 3/pause 500/faceDirection farmer 0/animate JunimoAmber false false 250 16 17 18 19 16 17 18 19/pause 500/showFrame Jasper 33/pause 500/showFrame Jasper 4/emote Jasper 8/pause 500/jump JunimoAmber 3/playSound junimoMeep1/speed JunimoAmber 7/move JunimoAmber 0 -2 3/speed JunimoAmber 7/move JunimoAmber -1 0 2/playSound leafrustle/pause 500/faceDirection Jasper 0/pause 1000/faceDirection farmer 3/faceDirection Jasper 1/speak Jasper \"I could have sworn I saw something...#$b#Well, never mind.\"/pause 1500/faceDirection Jasper 2/faceDirection farmer 2/speak Jasper \"Stardew Valley is more than just a place on the map. It is alive. Every tiny insect that scuttles, every rustle in the leaves...#$b#$q 50700436 null#But there is more than that too.#$r 50700437 50 spiritquest_Yes#Yes, I feel it too.#$r 50700437 0 spiritquest_Neu#I thought you were a scientist!#$r 50700438 -50 spiritquest_No#I don't believe any of that spiritual nonsense.\"/pause 500/showFrame Jasper 33/pause 500/speak Jasper \"Thank you for your company, @. It has been a pleasure speaking with you.\"/pause 500/showFrame Jasper 32/pause 1500/faceDirection farmer 3/pause 500/faceDirection farmer 1/move farmer 4 0 0/pause 500/faceDirection farmer 3/pause 500/emote farmer 60/move farmer 0 -3 0/pause 500/playSound junimoMeep1/showFrame Jasper 33/jump Jasper 2/pause 500/faceDirection Jasper 0/emote Jasper 8/pause 1000/end"
+	}
+},
+{
+	"LogName": "Museum2 Events", 
+	"Action": "Load",
+	"Target": "Data/Events/Museum2",
+	"FromFile": "assets/Museum2.json"
+		},
+{
+	"LogName": "Farm Events and mail", 
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+	"Entries": {
+		"50709911/t 600 1130/f Jasper 1500/e 50709910/e 50709900": "continue/64 15/farmer 64 16 2 Jasper 64 18 0/addConversationTopic JasperGone1 7/addConversationTopic JasperGone2 10/pause 1500/speak Jasper \"Um, good morning, @. I just thought I'd drop by and let you know I'll be gone for a while.$4\"/pause 500/emote farmer 8/pause 500/speak Jasper \"Yes... I have decided that the only way I can restore my reputation - (and prove Peasbody wrong!) - is to find the dwarves.\"/pause 500/emote farmer 16/pause 500/speak Jasper \"Please do not fear for my safety, @. I have entered the caves on many an occasion - and I know how to use my sword.\"/pause 500/faceDirection Jasper 3/pause 500/emote Jasper 28/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"I wanted you to have this as a small token of my esteem, and gratitude for our friendship.$4 [524]#$b#In case... well...$s\"/pause 500/faceDirection Jasper 1/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"No, I shall be back! I shall return with evidence that will wipe that knowing smirk from Peasbody's face.$5\"/emote farmer 28/pause 500/speak Jasper \"Thank you, @. For all that you have done for me. And, if Yoba wills it, I shall see you in a few days.#$b#Fare thee well, my friend.\"/pause 500/end invisible Jasper",
+		"50709912/e 50709911/t 600 1130/A JasperGone1": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"Ah, good morning Mr. @!^Ah, good morning, Ms. @!#$b#I'm sorry to interrupt your day, but I am very concerned about our mutual friend.\"/pause 500/emote farmer 8/pause 500/speak Gunther \"I mean our foolhardy Professor Jasper... I tried to caution him against heading into the caves alone... but he insisted.\"/pause 500/faceDirection Gunther 2/pause 500/faceDirection Gunther 0/pause 500/speak Gunther \"The caves are dangerous - as I am sure you will testify, @! And I'm worried something terrible has happened to him.\"/pause 500/emote farmer 28/pause 500/speak Gunther \"I have heard that you have ventured into the depths. So please, keep watch for him.\"/pause 500/emote farmer 60/pause 500/end",
+		"50709913/e 50709911/A JasperGone2/x Jasper_Peasbody1 true": "null",
+		"50709915/e 50709914/A JasperHurt/x Jasper_Home true": "null",
+		"50709916/e 50709915/A JasperHome1/x Jasper_Home1 true": "null",
+		"50709929/e 50709919/A JasperHomeA/x Jasper_HomeA true": "null",
+		"50709930/e 50709920/x Jasper_HomeB true": "null",
+		"50709932/e 50709921/f Jasper 2500/z winter/z fall/x Jasper_Picnic true": "null"
+			}
+		},
+{   "Action": "EditData",
+	"Target": "Data/mail",
+	"Entries":{ 
+		"Jasper_Peasbody1": "Hello farmer,^We've never met, but I'm reaching out to you because I'm concerned about our mutual friend, Prof. Jasper Thomas. He's a hot-headed fanatic, and I've heard rumors that he's gone off into the caves following a 'white rabbit' - and, in all likelihood, got himself killed. Despite what I'm sure he's told you (since we parted rather unamicably), I've never wished harm upon him. But then again... he was always a bit of a stubborn fool, and never inclined to leave well alone what should be left alone!^I'm sorry, this isn't a threat! It's merely an expression of concern. Please, if you've found him - alive or dead - I'd appreciate you letting me know. Because we were friends once and, truth be told, I still care for the pig-headed fool.^^Regards, ^Professor Cameron Peasbody.[#]Peasbody's Letter",
+		"Jasper_Home": "Greetings @,^I am truly indebted to you. That you would find me, and bring me home. Or what is left of me. The infection has left me a shadow of my former self, and the injury was as dire as I feared... I hope it shall not come as too much as a shock to you, my friend.^^I shall be home tomorrow, into what Gunther has uncharitably labelled \"house arrest\". I suspect I shall achieve a great deal of writing, and possibly some reading too.^^Your company would, as always, be greatly appreciated.^^Best wishes, Jasper.[#]Jasper is home.",	
+		"Jasper_Home1": "Dear @.^House arrest is starting to get tiresome. I miss the scent and the sound of the forest. I am becoming more adept with the wheelchair now, but alas it is problematic ascending and descending the stairs - for which Gunther has been very courteous in assisting - and once outside the ground proves treacherous and uneven. I am practicising my exercises every morning and evening, like a dutiful student, in the hope that soon I shall be at least somewhat ambulant once more.^^Yours truly, Jasper.[#]Jasper's correspondence 1.",
+		"Jasper_HomeA": "Greetings and salutations!^I hope things are going well for you on the farm, @, and that you are not yet weary of my correspondence. I have precious few friends in this world, and I do not wish to trouble them.^Speaking of friends - may I dare to think? - I penned a missive to Peasbody and received a swift response! It appears, perhaps, that a visit may be imminent.^^Yours fondly, Jasper.[#]Jasper and Peasbody.",
+		"Jasper_HomeB": "Hello @!^Apologies for my melancholic mood earlier. I find my outlook much improved, for I have just received excellent news. My wound has healed fully, thus I am to be fitted with a prosthetic. I will become bionic man! Ah, I jest, but it will be good to get back on my own two - well, one - foot again.^Anyway. I trust all is well with you, and maybe hope that one day soon I shall be able to visit your farm once more. For even though the mines may now be denied me, there is still so much of this world left to explore.^^Fare thee well, Jasper.[#]Jasper's Prosthetic.",
+		"Jasper_Picnic": "My dear friend,^ I have discovered the most magical place! Please meet me near the statue of 'Old Man Cannoli' over the noon-time period on the next sunny day. You might like to put in your swimwear!^^Fondest regards, Jasper.[*]Invitation to a picnic"
+				}
+		}, 
+
+{           
+	"LogName": "Mine Events", 
+	"Action": "EditData",
+	"Target": "Data/Events/Mine",
+	"Entries": {
+		"50709914/e 50709912/f Jasper 1500": "Upper_Ambient/18 7/Harvey -100 -100 2 Jasper -100 -100 0 Jasper -100 -100 0 Dwarf -100 -100 0 farmer 18 12 0/addConversationTopic JasperHurt 3/addConversationTopic JasperHome1 7/skippable/pause 500/move farmer 0 -2 0/pause 500/playSound stairsdown/emote farmer 16/warp Dwarf 23 9/pause 500/move Dwarf -1 0 3/pause 500/jump Dwarf 1/speed Dwarf 5/move Dwarf -4 0 2/pause 500/speak Dwarf \"You! Please, you must come with haste!\"/pause 500/emote Dwarf 40/pause 500/speak Dwarf \"One of your kind, he is hurt.\"/move Dwarf 2 0 1/faceDirection Dwarf 3/speak Dwarf \"Foolish surface-dweller! I fear the Shadow People got him.\"/emote farmer 8/move farmer 0 -1 1/pause 500/faceDirection Dwarf 1/pause 500/move Dwarf 2 0 1/pause 500/move Dwarf 1 0 0/pause 500/warp Dwarf -100 -100/playSound stairsdown/pause 500/emote farmer 16/pause 500/speed farmer 7/move farmer 4 0 0/warp farmer -100 -100/globalFade/viewport -1000 -1000/changeToTemporaryMap MineIce/viewport -1000 -1000/warp Dwarf 12 11/warp farmer 15 8/faceDirection Dwarf 1/addTemporaryActor InjuredJasper 32 32 13 12 2 false/pause 1000/viewport 18 11/playMusic starshoot/faceDirection farmer 2/pause 500/emote farmer 16/pause 500/speed farmer 5/move farmer 0 3 3/move farmer -1 0 3/pause 500/speak Jasper \"@? Is that... is that you?$7#$b#I'm sorry. I'm a fool. I... I ran afoul of those... those shadow brutes.$7\"/jump Dwarf 2/pause 500/emote Dwarf 12/pause 500/speak Jasper \"... I managed to slay several with my sword... but there were too many.$7#$b#So... I ran. And fell... And tore my leg.$7\"/pause 500/emote farmer 40/pause 500/speak Jasper \"It's bad, isn't it? It's so hot, @... It's like it's on fire. But I'm so cold.$7#$b#This... this strange child found me... helped me... but... I need to get home, @.$7#$b#Please, please help me...$7\"/emote farmer 16/pause 500/globalFade/warp Dwarf -100 -100/viewport -1000 -1000/changeLocation Hospital/viewport -1000 -1000/warp InjuredJasper 20 4/warp farmer 14 6/warp Harvey 15 6/viewport 16 6/pause 500/faceDirection Harvey 3/faceDirection farmer 1/pause 500/speak Harvey \"He's fortunate you found him when you did, @. Any longer, and the infection would've spread into his organs.#$b#As it is, there's a high chance he will lose his leg.$2\"/pause 500/emote farmer 28/pause 500/speak Harvey \"But better his leg than his life.#$b#Let that be a warning to you, @. Those caves are not to be messed with.$2\"/pause 1000/end dialogue Dwarf \"I hope your friend fares well, @. But 'strange child'? That he would not even recognise those whom he seeks?#$b#You surface dwellers, truly a peculiar species.\""
+				}
+			
+		},
+{
+	"LogName": "Cameron makes an appearance",
+	"Action": "EditData",
+	"Target": "Data/Events/ArchaeologyHouse",
+	"Entries": {
+
+		"50709921/f Jasper 2000/e 50709930/w sunny/t 900 1300": "none/13 11/Jasper 15 9 0 farmer -100 -100 1/skippable/addTemporaryActor Cameron 16 32 11 12 3 true/pause 500/textAboveHead Jasper \"Now where was it?\"/pause 1000/move Cameron 0 -2 1/pause 500/textAboveHead Jasper \"Who alphabetized this?\"/move Cameron 0 -1 1/pause 1000/textAboveHead Cameron \"Hello Jasper\"/pause 500/jump Jasper 2/pause 500/faceDirection Jasper 3/pause 500/playMusic sappypiano/speak Jasper \"You came! I... I did not think you would.$4\"/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"I did not wish for you to see me like this. To see the product of my folly.$2\"/pause 500/move Cameron 2 0 1/pause 500/speak Cameron \"I needed to see you, Jasper. I needed to see... To see for myself...$2\"/pause 500/faceDirection Jasper 3/emote Jasper 12/pause 500/speak Jasper \"I do not wish for your pity.$5\"/emote Cameron 28/pause 500/speak Cameron \"I came because I care... And I'm sorry.$2#$b#I'm sorry if my actions pushed you into... into this.$4\"/pause 500/shake Jasper 350/pause 500/faceDirection Jasper 1/pause 500/speak Jasper \"Your words wounded me, Professor Peasbody. They cut deep into my heart. To have... Oh, I thought that we were better than this.$5#$b#That I meant something to you.$2\"/pause 500/faceDirection Jasper 3/speak Cameron \"You did, Jasper. You do! I...$2\"/pause 500/shake Cameron 250/pause 1000/move Cameron 1 0 1/move Jasper 1 0 1/pause 500/textAboveHead Cameron \"Please...\"/pause 1000/warp farmer 9 14/move farmer 5 0 0/move farmer 0 -2 0/playSound woodyStep/pause 500/jump Cameron 2/faceDirection Cameron 2/faceDirection Jasper 2/jump Jasper 2/emote farmer 28/pause 1000/emote Jasper 60/emote Cameron 40/pause 1000/speak Jasper \"Why, hello @... I would like to introduce you to Professor Peasbody. You may have heard me mention him.$5^Why, hello @... I would like to introduce you to Professor Peasbody. You may have heard me mention her.$5\"/speak Cameron \"Please, call me Cameron. Professor Peasbody makes me sound like some sort of stuck-in-the-mud academic. No offence, Professor Thomas.\"/pause 500/emote Jasper 12/pause 500/speak Jasper \"None taken.$5\"/pause 500/faceDirection Cameron 1/pause 500/faceDirection Cameron 2/question null \"...#Sorry to interrupt, I'll leave you two to it.\"/pause 500/faceDirection farmer 2/move farmer 0 2 3/pause 500/textAboveHead Jasper \"Wait!\"/pause 500/move Jasper 0 4 3/move Jasper -2 0 2/pause 500/faceDirection farmer 0/move Cameron -1 0 0/pause 500/speak Jasper \"*whispers* He seems genuinely concillatory, @. And I... I find myself still feeling affection for him. Despite his faults.^*whispers* She seems genuinely concillatory, @. And I... I find myself still feeling affection for her. Despite her faults.#$b#Before I talk with him, I would appreciate your advice.^Before I talk with her, I would appreciate your advice.\"/speak Jasper \"$q 5070123 null#If the opportunity arises, should I rekindle our friendship?#$r 5070124 0 Rekindle_Yes#Yes, definitely, just... be careful.#$r 5070125 0 Rekindle_No#I think you're better off without them.\"/pause 500/speak Jasper \"Thank you for your insight, @. I shall fill you in on the details later.\"/pause 500/emote Jasper 32/pause 500/faceDirection Jasper 0/pause 500/move Jasper 0 -4 3/pause 500/faceDirection Cameron 1/pause 500/faceDirection Cameron 2/emote farmer 60/pause 500/faceDirection Cameron 1/pause 1000/message \"Better leave them alone.\"/end dialogue Jasper \"$p 5070124#It is tentative days yet, but I feel Cameron and I are perhaps ready for a fresh start.$4|I gave a definitive 'no', @. There is a heavy ache in my heart, but I know it is for the best.$2\""
+	}
+},
+
+{
+	"LogName": "Picnic in the Woods",
+	"Action": "EditData",
+	"Target": "Data/Events/Woods",
+	"Entries": {
+
+"50709933/f Jasper 2500/n Jasper_Picnic/w sunny/z winter/z fall/t 1000 1500": "woodsTheme/14 13/Jasper -100 -100 2 farmer 13 12 3/skippable/addTemporaryActor JunimoAmber 16 32 -100 -100 1 false Character/addTemporaryActor JunimoJade 16 32 -100 -100 2 false Character/addTemporaryActor JasperClothes 16 32 -100 -100 2 false Character/pause 500/faceDirection farmer 0/pause 500/emote farmer 8/pause 500/move farmer -5 0 2/pause 500/playSound junimoMeep1/pause 500/faceDirection farmer 3/warp JunimoAmber 5 11/animate JunimoAmber true false 150 4 5 6 7/pause 500/emote farmer 16/move farmer 0 -1 3/pause 500/stopAnimation JunimoAmber/jump JunimoAmber 2/playSound junimoMeep1/speed JunimoAmber 4/move JunimoAmber -3 0 2/pause 500/move JunimoAmber 2 0 1/animate JunimoAmber true false 150 4 5 6 7/pause 500/message \"The junimo wants you to follow!\"/pause 500/stopAnimation JunimoAmber/move JunimoAmber -2 0 3/warp JunimoAmber -100 -100/pause 500/speed farmer 3/move farmer -5 0 3/warp farmer -100 -100/globalFade/viewport -1000 -1000/changeToTemporaryMap FairyPoolPicnic/warp Jasper 27 8/warp farmer 33 13/viewport 18 14/pause 500/speak Jasper \"Hello @. You're early! I was about to come out to meet you.$3#$b#But I'm afraid things take a little longer these days.$4\"/pause 500/move farmer -4 0 0/speak Jasper \"A lovely place for a picnic, is it not?\"/move farmer 0 -2 3/move farmer -1 0 3/emote farmer 20/pause 1000/speak Jasper \"The forest spirits guided me here. I was pursuing my research when I heard a strange sound. Like birds, yet not like birds, and a bright flash of color caught my gaze.$4#$b#I followed it through the trees, and found myself here.#$b#It is magical, don't you think?\"/faceDirection farmer 0/emote farmer 32/pause 500/move farmer 0 -2 3/move farmer -2 0 1/pause 500/speak Jasper \"I apologize if this is a little forward of me...$4#$b#But would you join me in the water?\"/pause 500/emote farmer 20/speak Jasper \"Great! Only, can you enter first please? I'd rather you didn't watch me. I am a bit... awkward.$4\"/pause 500/emote farmer 32/move farmer 0 -1 3/move farmer -2 0 2/faceDirection Jasper 3/move farmer 0 2 2/swimming farmer/move farmer 0 3 2/move Jasper -3 0 2/pause 500/changeSprite Jasper Swimsuit/warp JasperClothes 25 8/pause 1000/move Jasper 0 2 2/swimming Jasper/pause 500/speak Jasper \"It is easier to move. In the water I no longer feel like a cripple.$10\"/warp JunimoAmber 33 11/move JunimoAmber -3 0 0/warp JunimoJade 31 8/move JunimoJade 0 1 2/move Jasper 0 2 1/move farmer 1 0 3/move Jasper 0 1 1/positionOffset farmer 0 -6/pause 500/speak Jasper \"There's been something I wish to tell you, @.$11\"/pause 1000/speak Jasper \"Ever since that terrible time in the mines, I have been re-evaluating my life.$10#$b#I guess, what I am trying to say is...$11\"/animate JunimoJade false true 150 24 25 26 27/animate JunimoAmber false true 150 24 25 26 27/speak Jasper \"I... well, I care for you, @. A... well... a lot...$11\"pause 1500/playSound slosh/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/shake JunimoJade 250/eyes 1 -10000/positionOffset Jasper 2 0/positionOffset farmer -2 2/shake JunimoAmber 250/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/positionOffset Jasper 2 0/positionOffset farmer -2 0/playSound junimoMeep1/jump Jasper 1/jump farmer 1/faceDirection farmer 1/stopAnimation JunimoJade/stopAnimation JunimoAmber/emote JunimoAmber 16/jump JunimoJade 3/speak Jasper \"Are those... are those...$10\"/pause 500/speed JunimoAmber 5/move JunimoAmber -2 0 3 true/speed JunimoJade 5/move JunimoJade -2 0 3/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 500/speak Jasper \"They're real!$8#$b#They're really real!$9\"/pause 500/stopSwimming Jasper/stopSwimming farmer/end"
+    }
+},
+
+
+
+//Dialogue from other NPCs
+
+{
+	"LogName": "Jas Dialogue", 
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Jas",
+	"Entries":{
+		"ArchaeologyHouse_Tue": "$c 0.8#Hello farmer @! Prorfessor Jasper's teaching us about gemstones! There's one called a fairy stone. It sounds really pretty!#Hello farmer@! Did you know that... ",
+		"summer_Tue_inlaw_Jasper": "I hope Jasper still comes to see us now he's living with you. I've been collecting lots of stones to show him!",
+		"summerBeach6": "I found a pretty rock! Do you think Professor Jasper might like it?$3#$b#He's super smart, and answers ALL my questions. Even the ones Miss Penny says it's rude to ask.$1",
+		"Fall_Tue8": "Professor Jasper looks like a wizard, doesn't he? Like he could teach you stuff in a magic school.$4#$b#He wrote some of the books in the library, you know!$1"
+
+			},
+	"When": {
+		"HasFlag:Jasper_Penny": true
+					}
+	},
+	{
+		"LogName": "Vincent Dialogue", 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Vincent",
+		"Entries":{
+			"ArchaeologyHouse_Tue": "Hehe! There's a rock called schist! Schist!$3"
+		},
+		"When": {
+			"HasFlag:Jasper_Penny": true
+						}
+		},
+		
+//Festival Dialogue		
+			
+{	"LogName": "Beach Jellies",
+	"Action": "EditData",
+	"Target": "Data/Festivals/summer28",
+	"Entries":{
+		"Jasper": "Ah, fascinating specimens, these creatures. Although my expertise lies more in the subterranean than the aquatic." 
+		}  									
+	},	
+{	"LogName": "Winter Star",
+	"Action": "EditData",
+	"Target": "Data/Festivals/winter25",
+	"Entries":{
+		"Jasper": "Secret gift giving events always make me feel very awkward. But at least everyone loves diamonds, right?$4"
+		}
+	},
+{	"LogName": "Ice Festival",
+	"Action": "EditData",
+	"Target": "Data/Festivals/winter8",
+	"Entries":{	
+		"Jasper": "Ah, hello @! Linus was just regaling me with tales of the tundra dwellers!$1"
+		}
+	},
+{	"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Entries":{
+		"Jasper": "Are you acquainted with my good friend Rasmodius?"
+		}
+	},
+{	"LogName": "Flower Dance",
+	"Action": "EditData",
+	"Target": "Data/Festivals/spring24",
+	"Entries":{
+		"Jasper": "Dancing is not my forte. Two left feet, is how my dear mother once described me.$4"
+	},
+	"When": {
+		"HasSeenEvent:50709914":"false"
+	}	
+},
+{	"LogName": "Flower Dance - post accident",
+	"Action": "EditData",
+	"Target": "Data/Festivals/spring24",
+	"Entries":{
+		"Jasper": "A celebration of love and fertility. I hope I am not expected to dance.$1#$b#People might laugh. Although I suppose I could always do the unhip-hop!$3"
+	},
+	"When": {
+		"HasSeenEvent:50709914":"true"
+	}
+},
+{	"LogName": "Egg Festival",
+	"Action": "EditData",
+	"Target": "Data/Festivals/spring13",
+	"Entries":{
+	"Jasper": "The egg festival holds great spiritual significance; the world is being reborn anew.$1"
+			}
+	},
+{	"LogName": "Spirit's Eve",
+	"Action": "EditData",
+	"Target": "Data/Festivals/fall27",
+	"Entries":{
+	"Jasper": "These skeletons are most fearsome fiends. Imagine if they were to break out? There would be chaos!$2"
+			}
+		},
+{	"LogName": "Fair",
+	"Action": "EditData",
+	"Target": "Data/Festivals/fall16",
+	"Entries":{
+		"Jasper": "Clint's work is truly marvelous. A fine blade is required for delving into the valley's depths.#$b#Me? I favour an obsidian edge.$1"
+	}
+},
+
+//Strings from Maps
+
+
+{	"LogName": "Strings from Maps",
+	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"FromFile": "assets/StringsFromMaps.json"
+},
+{
+	"Action": "EditMap",
+	"Target": "Maps/Museum2",
+	"MapTiles": [
+	   {
+		  "Position": { "X": 6, "Y": 16 },
+		  "Layer": "Buildings",
+		  "SetProperties": {
+			 "Action": "Message \"FilingCabinet.{{day}}\""
+		  }
+}
+]
+},
+/*
+{ 	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "The Stardew Inquisitor: HUNTED BY A TALKING BEAR?^^A group of trampers camping near Stardew Valley Gorge had a close encounter with a bear last week. \"We were partying pretty loud,\" one student, who would only identify himself as 'Brad', told the News. \"I mean, we were in the a-- end of nowhere, who were we gonna disturb? Then we heard a rustling in the bushes and, sh-- I damn near p--ed myself. There was, like a massive bear, six, seven feet tall, and almost as wide. It just stared at us. I guess I just totally panicked and chucked my bottle at it. The beggar caught it in one hand, grinned at me, and said - and I kid you not! - clear as day, 'Thank you'. Then it trotted off into the forest.\"^^When asked if they had been partaking of illicit substances, 'Brad' became suddenly mute."
+			},
+	"When": { "DayofWeek": "Monday"
+						}
+	},
+{ 	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "The Stardew Inquisitor: SLIME PLAGUE!^^Strawberry Fields was ravaged by a hoard of slimes during last night's new moon. \"They destroyed everything!\" the distressed Orchadist informed our reporters. \"And left behind a foul goop that's poisoned the land. What are we to do?\" The local Adventurer's Guild has been approached for comment, but have yet to return our calls."
+			},
+	"When": { "DayofWeek": "Tuesday"
+			 }
+	},
+{ 	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "An article from Farmer Life Monthly; it's a few years old:^^The tiny village of Pelican Town is renowned for its rich and fertile soil which, combined with its relative high humidity, provide optimal growing conditions. If the rumors are true, seeds planted in Pelican Town's soil will sprout faster and produce a greater yield than those outside the area. It seems almost criminal to report that Pelican Town's last large scale farming operation ceased production XX years ago, and the land was allowed to fall into disrepair. It is said to have been inherited by the Farmer's grandchild, and we can but hope that one day they shall claim their birthright."
+			},
+	"When": { "DayofWeek": "Wednesday"
+						}
+	},
+{ 	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "A series of petty burglaries have been reported around the Stardew Valley region. One eyewitness claimed to have woken at night to hear strange noises, and found a small person rifling through their refrigerator. The perpetrator fled on foot and is believed to have escaped via a mine shaft. \"They were short,\" the witness reports, \"possibly a child, and wearing a starnge lumpy hood. I couldn't see their face.\" So far, stolen items consist of food, trinkets, and scrap metal.^^People living in the area are encouraged to keep their doors locked, and secure all valuables away until the thief, or theives, are apprehended." 
+			},
+	"When": { "DayofWeek": "Thursday" }
+	},
+{ 	"Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "Mr. MacGregor, proprietor of 'Many Clucks Given', a free-range chicken farm outside Grampleton, reported a strange occurance in his hen barn this morning. \"The girls were extremely restless,\" he said. \"And I was worried at first about vermin. But instead I found the weirdest thing: several of the eggs had turned black, speckled with red, and there seemed something faintly ominous about them.\" When asked what he did with the corrupted eggs, he shuddered. \"I disposed of them,\" he said. A pity, we at the Inquisitor feel, for it would have been interesting to see what hatched."
+			},
+	"When": { "DayofWeek": "Friday" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "THEFT AT LOCAL MUSEUM: The tiny township of Pelican Town suffered further heartbreak today, when their museum curator departed abruptly - and took all of their small regional collection with him. \"It's a sad loss for the region,\" Mayor Lewis informed us. \"All that local lore, just gone!\" A theft report lodged at the time suggested that a number of books had also been taken, and that the collection contained several rare and unusual gemstones, endemic to the region.^^Local archeologist, M. Gunther, has stepped into the role as curator, although how long will the display cabinets remain bare? Only time will tell."
+			},
+	"When": { "DayofWeek": "Saturday" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {"Museum2.2": "LOCAL FARMER 'WOWS' WITH GIANT PUMPKIN:^^Stardew Valley farmer, M. Terence of Fairhaven took the grand trophy at the Stardew County fair this past weekend, when he presented his impressive 2,465 pound pumpkin to a gobsmacked audience. \"The secret's in the seeds and the soil,\" he informed us. \"You have to fertilize it and take care to water it everyday.\" When asked what would become of the gigantic fruit, he joked that he might: \"hollow it out and turn it into a playhouse for the kids.\""
+			},
+	"When": { "DayofWeek": "Sunday" }
+	},
+		
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "INFERNO RAGES UNDER PELICAN TOWN:^^It's been more than twenty years, and the coal fire beneath Pelican Town is still burning.^^The coal ignited in XXXX after a gas explosion that killed 26 miners and injured dozens more. Attempts to smother the fire have failed, but it is reported to be confined in the deepest levels of the mines, held in check, our sources report, by \"caverns filled with perennial ice\" No, the science doesn't make any sense to us either.^^Despite this, Pelican Town is still a charming little seaside village, and attracts dozens of tourists annually."
+			},
+	"When": { "Day": "2",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+		"Museum2.2": "Stardew Valley Tribune, almost a decade ago: Stardew Search and Rescue have called off a search for missing Pelican Town resident, Tristan, three days after he failed to return from a spelunking expedition.^^Tristan, and his girlfriend, Mona, were last seen together on sunday morning, when they are believed to have entered Pelican Town's extensive cave system. Close to midnight, Mona arrived home in what her guardian described as 'a confused and bewildered state'. She is currently receiving medical care for mild hypothermia. \"I don't know what's wrong with her,\" a friend - who wished to remain anonymous - informed us. \"She kept whispering, over and over again, 'I should never have left the cat...' but she doesn't even like cats!\""
+				},
+	"When": { "Day": "3",
+			"NewLore": "true" 
+						}
+	},
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+	"Museum2.2": "It's a formal letter with the Stardew Valley crest, dated several years ago:^^To Mayor Lewis,^With the last census showing that the population of Pelican Town has fallen below 100, the Stardew Council have made the decision to assimilate it into the greater Grampleton region. The ruling of Pelican Town will now fall under the jurisdiction of the Governor.^^Now Pelican Town no longer requires an independent mayor, your role will become ceremonial in nature. We are grateful for your dedication and service to the Ferngill Republic, and wish you the best of luck in your future endeavors. It is our hope that you will take this opportunity to enjoy an early retirement.^^With gratitude and respect, the Governor."
+	},
+	"When": { "Day": "4",
+			"NewLore": "true" 
+			}
+	},
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+	"Museum2.2": "You've found a faded newspaper article, about fifteen years old:JOJA's HEIR VANISHES^Joseph Jacobson Jr, the sole son of Joja Tycoon, Joseph Jacobson, has disappeared.^Joseph Jr. was scheduled to take over the role on Monday, after the self-made billionaire's extravagent retirement party on Saturday night. However, an eyewitness reports that they saw Joesph Jr. \"sneaking out the back door around midnight.\"^A secret liaison gone wrong, or perhaps the Joja way of life no longer appealed?^The disappearance is not being regarded as suspicious; Joseph Jr. has always displayed reticience towards the public eye, but any sightings should be reported to the local police.^During his absence, the management of JojaCorp will be handled by a committee, overseen by Joseph Sr."
+			},
+	"When": { "Day": "5",
+			"NewLore": "true" 
+			}
+		},
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "It's an obituary:^^Mona of Pelican Town, beloved daughter, mother, sister, left us today, Spring the 28, after a tragic accident. Taken too soon, the world will be a darker place without her fierce and fiery spirit. May she rest now, bathed in Yoba's light, reunited with her dear Tristan."
+			},
+	"When": { "Day": "6",
+			"NewLore": "true" }
+	},
+	
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "It's an advertisement:^^PEST CONTROL SPECIALISTS^Have slimes oozed into your basement? Does a monster lurk under your bed? Your friendly Adventurer's Guild are here to help!^\"Free Quotes\"^^Call Marlon or Gil on XXX-XXXX-XXXX."
+			},
+	"When": { "Day": "8",
+			"NewLore": "true" }
+	},
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "STARDROP CHEF TAKES OUT REGIONAL CHAMPIONSHIP^^\"It's all down to my secret sauce,\" Gus, owner of the Stardrop Saloon, claimed, while accepting the trophy in yesterday's Stardew Valley Culinary Contest. Contestants came from all over the Stardew Valley region, with dishes ranged from escargot to tom kha soup. But it was Gus's spaghetti that won the day. \"I made the pasta myself,\" he added. \"And the ingredients are all fresh and locally sourced.\" He would not divulge the ingredients of his 'secret sauce', only that it was a recipe that had been in his family for generations."
+			},
+	"When": { "Day": "9",
+			"NewLore": "true" }
+	},
+	
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "JOJACORP PURCHASES THE 'INFERNO MINES':^^Mega corporation, JojaCorp, recently purchased the abandoned mines north of Pelican Town. Once a thriving gem-and-coal mine, it was abandoned XX years ago, after a series of explosions killed 26 miners and ignited the coal seam. JojaCorp's local head, Morris, refused to comment on the acquisition, and would not divulge the corporation's plans for the area."		},
+	"When": { "Day": "11",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "LOCAL TOWN BESIEGED BY \"STORM OF THE CENTURY\": A freak storm lashed the coastal township of Pelican Town at 6pm last night. Fierce wind gusts - some exceeding 55 mph - and a deluge of rain led to several homes evacuating to the local saloon. Several buildings were destroyed in the storm, including the town's community center; a further blow for the once prosperous mining villge.^\"We shall recover from this,\" states Pelican Town's Mayor Lewis. \"Pelican Town has weathered many storms. Our community shall survive.\" Whilst his faith in his community is admirable, it must be noted that the population has dwindled significantly since the closure of the mines, XX years ago."
+			},
+	"When": { "Day": "13",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "HONEY THIEF FOILED BY LOCAL GRANNY: Evelyn \"Granny\" Mullner is being hailed a hero tonight in Pelican Town, after she succesfully fended off a hungry bear - armed only with her gardening tools.^^\"I was gardening,\" the intrepid grandmother informed us. \"When a large bear strolled out of the forest. I think the poor thing was just hungry - but he gave me quite a fright! I swatted him on the muzzle with my rake.\" The bear then trotted away, looking quite distraught.^^\"I actually felt rather sorry for him,\" Granny Mullner continued. \"But we can't have a predator hanging around the children! I did leave some maple syrup on a tree stump in the woods though. I guess he accepted my apology: the bottle was empty - licked quite clean! - the next day.\""
+			},
+	"When": { "Day": "14",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "It's a scrap of stained paper, torn from a notebook:^^The valley has not been at ease since the mines ignited. They awoke a foul fiend in its depths; somewhere beneath the surface, something dark and shadowy slumbers. Is this the entity referred to as the 'void'?^The corruption has crept through the caves like a blight, twisting bats into monsters and mutating harmless crustaceans into horrifying beasts.^It is our duty to regain the balance between the -^^Here the text is obscured by a rusty brown stain. "
+			},
+	"When": { "Day": "15",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "Are you brave of heart and strong of spirit? Yes? Then the Adventurer's Guild need YOU!^^The creatures of the void are becoming increasingly bold and possess a threat to the fine folk of Stardew Valley.^^If you feel you have what it takes to become a Defender of the Valley, call in at the Adventurer's Guild and speak to Marlon or Gill.^^*Recruitment will involve a physical test. The Adventurer's Guild are not responsible for loss of life or limb incurred during this process." 
+			},
+	"When": { "Day": "16",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "What is the Stardrop?^^There are many who have pondered the existence of this mysterious fruit, noted throughout Stardew folklore for its energizing properties. Those, it is said, who consume the stardrop can never be killed, and there are rumours that it may contain the secret to immortality.^^What we do know, however, is that lore of it is endemic to the Stardew region."
+			},
+	"When": { "Day": "17",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "COTTAGE FOR RENT: Seeking a retreat away from the city? Surround yourself with the beauty of nature, in Cindersap Forest, near Pelican Town. Riverside location. V. peaceful. This tidy studio cottage would well suit someone with a love of nature. Available for long or short term rent.^^Please contact Marnie on XXX-XXX-XXXX."
+			},
+	"When": { "Day": "19",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "TOWN UNDER SIEGE BY AVIAN THREAT: Chestervale is under assault again, this time by an unlikely assailant: a goose!^^\"The varmint plucked up all my carrots,\" a local gardener informed us, \"and dropped my keys in the river. Locked me out of my own garden!\"^^\"He's really scary,\" added a small boy. \"And he stole my glasses!\"^^The goose's reign of terror was eventually brought to an end after it was cornered and captured in a local beer garden.^^When asked to justify its crimes, all it replied was, \"HONK!\""
+			},
+	"When": { "Day": "20",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "Stardew Valley Tribune, over twenty years ago:^NEW MAYOR TAKES THE POST IN PELICAN TOWN: M. Lewis accepted the role as Mayor of Pelican Town today, after a landslide win in the local elections.^^\"I have great plans for this town,\" he announced. \"We hope to bring her to the fore of the Stardew Economy, to really make our mark on the map.\"^His opposition, Guildmaster Marlon, conceded the loss gracefully."
+			},
+	"When": { "Day": "21",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "A page, torn from a notebook:^What lies beneath Stardew Valley? The caves that riddle Stardew Valley's mountainous terrain are filled with secrets. Strange artifacts have been found, including technology of which we do not understand, and the high occurance of iridium ore suggests the possibility of meteoric strike. That, combined with local folklore pertaining to the 'Winter Star', the endemic and mysterious fruit known as the stardrop, and the outstanding fertility of Pelican Town's soil, all point towards something not entirely of this world.^^I believe further research is required.^^M. Jasper."
+			},
+	"When": { "Day": "22",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "JojaCorp will begin drilling in the North Sea today, as the Ferngill Republic seeks oil reserves within its own borders. The Republic seeks to break ties with the Gotoro Empire, against which border and treaty disputes have lead to increasing tension between the two neighbors. After the signing of a trade treaty in XXXX, the Gotoran Empire has been steadily inflating the price of raw petroleum, leading to restrictions across the Ferngill Republic."
+			},
+	"When": { "Day": "24",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "The Stardew Inquisitor:^^Today, the 7th Spring, as rain cascaded around us, our intrepid parapsychologist Crystal Moonbeam ventured onto Pelican's Town tidal beach following rumors of a spirit that appears there under such conditions. After fording a small stream, she caught sight of the figure: An elderly man in a large hat. \"The rain seemed to haze around him,\" Moonbeam reports. \"Like he was there...but somehow also not there. He looked me in the eyes, and said in a voice like the creaking of deep sea timbers, 'I see ye have that gleam in ye eye, miss, but I'm afraid she does no' feel the same way about ye.'\""
+			},
+	"When": { "Day": "25",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "A page, torn from a notebook:^Dear Gunther,^The goblin folk of Bluemire have no written language, but they are skilled orators, and have preserved their cultural history through tales and interpretive dance. It has been my honor to attend several performances - something few outsiders are permitted. There is a recurring theme of a war: a collision between the shadows and a \"bright and fierce light\" that resulted in centuries of turmoil, and bears a striking resemblance to Rasmodius's tales of the Elemental Wars.^Alas, my time amongst their kind was cut abruptly short, after an unfortunate misunderstanding... - I shall spare you the details, my friend! - But needless to say, a hasty retreat was in order!^^Yours, M. Jasper."
+			},
+	"When": { "Day": "26",
+			"NewLore": "true" }
+	},
+	{ "Action": "EditData",
+	"Target": "Strings/StringsFromMaps",
+	"Entries": {
+			"Museum2.2": "TAKEN BY THE FAIRIES?:^^Four hours after she was reported missing by her worried guardian, seven-year old Mona was finally found alive and well in the woods west of Cindersap Forest. \"I was having a tea party with the fairies\", she informed her rescuers. \"They gave me a magic necklace!\" She appears none the worst for her adventure, although she refuses to parted with the necklace: a simple crystal on a leather cord."
+			},
+	"When": { "Day": "28",
+			"NewLore": "true" }
+	}*/
+	
+]
+}
+		
+		

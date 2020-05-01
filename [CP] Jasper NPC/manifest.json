@@ -1,0 +1,13 @@
+{
+
+  "Name": "NPC Jasper",
+   "Author": "Lemurkat",
+   "Description": "Adds the NPC Jasper",
+   "Version": "1.0.0",
+   "UniqueID": "Lemurkat.NPCJasper",
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher"
+    }
+   
+   
+}

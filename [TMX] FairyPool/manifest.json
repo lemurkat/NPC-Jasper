@@ -1,0 +1,12 @@
+{
+    "Name": "Fairy Pool",
+    "Author": "LemurKat",
+    "Version": "1.0",
+    "Description": "Adds a hidden pool west of the secret woods.",
+    "UniqueID": "LemurKat.FairyPool.TMX",
+   "ContentPackFor": {
+      "UniqueID": "Platonymous.TMXLoader",
+      "MinimumVersion": "1.4.0"
+              }
+      
+    }

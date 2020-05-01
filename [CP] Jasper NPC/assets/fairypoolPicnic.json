@@ -1,0 +1,3 @@
+{
+    "NoSwim": "pause 500/speak Jasper \"Oh, sorry. That was presumptuous of me.$2#$b#Perhaps we should just eat then?\"/faceDirection Jasper 1/move Jasper 1 0 1/move farmer 2 0 1/pause 1000/globalfade/message \"It is a pleasant picnic, but it feels like you've missed out on something...magical.\"/pause 500/end"
+    }

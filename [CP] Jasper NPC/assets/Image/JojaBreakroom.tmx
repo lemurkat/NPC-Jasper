@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="-1" width="23" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="Warp" value="1 11 Town 90 48 2 11 Town 90 48"/>
+ </properties>
+ <tileset firstgid="1" name="MovieTheater_TileSheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="../../../../../../../../../../Users/Lemurkat/Pictures/Stardew/Core Game Files/Tiles &amp; Festivals/MovieTheater_TileSheet.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="257" name="bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+  <image source="../../../../../../../../../../Users/Lemurkat/Pictures/Stardew/Core Game Files/Tiles &amp; Festivals/bathhouse_tiles.png" width="240" height="256"/>
+ </tileset>
+ <tileset firstgid="497" name="InsideTiles" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="../../../../../../../../../../Users/Lemurkat/Pictures/Stardew/Core Game Files/Tiles &amp; Festivals/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2673" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+  <image source="../../../../../../../../../../Users/Lemurkat/Pictures/Stardew/Core Game Files/Tiles &amp; Festivals/lemurfurniture.png" width="512" height="1024"/>
+ </tileset>
+ <tileset firstgid="4721" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="../../../../../../../../../../Users/Lemurkat/Pictures/Stardew/Core Game Files/Tiles &amp; Festivals/townInterior" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="23" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAt+CJJfQwDIlLUxyCQAcQmQHY0Eg2S28IJ4cMwSByGkcWxyUdD3WwNxMJSCHoyJya+JEkYi3MxMEhwIfgg4M2AXW0QJ3EYl134zKYUw8BgN9ubAYFjGKgbJiFctDMbm7vJDRdSAbHmEpM2kQEpYUOq2bQAAL3Mu68=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="23" height="15">
+  <properties>
+   <property name="Warp" value="0 7 Town 90 48 0 8 Town 90 48"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJy1kjtuwkAQhscVeBuXYHfkbepIRHAQIqgDuUHccgiSdHmIC0CUtDQIChoiDkCTOlKUIo8qv+UdjeOs8KKIX/o0g7X+PLvL0CcabYEH8AzSOVJEIagqys26tUuD25Qbl2gAFo6QF3b3C0SXheTZcUA0hWfmyrox+glYOQInXn8BolSNYfcjvE/avY/9HYDD1D5X8L6AV0foFzEPuILn2uC3PZN1qWCGHSXf4GrjvrW4U86eEmzcrkekvKSf63P+wDuf/t9+E/ed+u3mlLDnMthV0qe9tnOH8FY9mTlODa6TIOnrqA0L9xf+C9+u3A/nPnPmTbhOtbuF2ja43zNuH88Ci7vrac5AB3TBueF3pIm/wXNz/U+iDDy37fx57rct8gOx83kK
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="23" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi6oJSdgaGMHVNciBW3nlAOBoYwDgS/XIqBoUIKQWMDRzkZGL5DzTzFiMc9QHPLgPg7UP0PIJ4ONG8GAbNJBYxcDAxMXAg+zA5iQAMXpth2SQaGHZKYbBagWhUoJga85GNgeMUHYe+BhtF1oFk3JDHZILNhGAQuSuI2txGH/dXA8K0CYmagfCWQjuJENZeFSHeDQBYXws0gMBto1ixOCHsm1B5izUaPnyYi3EGuu4kFnyQRGAQ+Qtlb8IQ7pQBfnJILspEwup8GMwAA7UIsFg==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Always Front" width="23" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBg2CTJMAqGKGDhguDBaHY0JwNDFCeEHQmkYzhRzYWZfZGK6Y+WZtMTfAS6+xMQbyHB/VuhevBhEKiAYlLC5jJQbaEQYUxLs2H4IxH+hOHPRJiNHCakYGLdCwBQozxc
+  </data>
+ </layer>
+ <objectgroup id="8" name="Always Front"/>
+</map>

@@ -1,0 +1,12 @@
+{
+  "Name": "Jasper Locations",
+  "Author": "LemurKat",
+  "Version": "1.0.0",
+  "Description": "Locations for Jasper",
+  "UniqueID": "Lemurkat.JasperLocation",
+  "ContentPackFor": {
+    "UniqueID": "Platonymous.TMXLoader",
+    "MinimumVersion": "1.4.0"
+            }
+ 
+}

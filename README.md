@@ -14,8 +14,10 @@ He has been tested and planned for compatibility with:
 He HAS NOT been fully tested for compatibility for:
 - Stardew Valley Expanded
 
-The archives of the Archaeology House also contain many new aspects of SDV lore, some relating to my other mods (Mr. Ginger, the Ranch Expansion). **THIS REQUIRES CP 1.14 or HIGHER to work** If you do not want extra lore, do not poke through the filing cabinets.
+The archives of the Archaeology House also contain many new aspects of SDV lore, some relating to my other mods (Mr. Ginger, the Ranch Expansion). **THIS REQUIRES CP 1.14 or HIGHER to work.** If you do not want extra lore, do not poke through the filing cabinets.
+
 If you run a lore-related mod of your own and would like to add some of your own lore to the archives, please message me and I shall see what can be done. 
+
 Note: sometimes you may see references to a charater named "Mona". This is NOT the custom NPC of the same name, but related to the canon-Mona that once lived in Pelican Town.
 
 There are some aspects of Jasper's six-heart scene that contain a small amount of gore (related to an injury he sustains). A core element of Jasper's character growth relates to a rather terrible thing happening to him during the process of the game, and I will not remove it altogether. Actions have consequences.

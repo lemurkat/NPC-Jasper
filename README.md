@@ -11,7 +11,7 @@ He has been tested and planned for compatibility with:
 - My other mods: Mr. Ginger/Ranch Expansion.
 - Numerous other NPC mods for festival placement, etc. If you find any instances where he: a, doesn't appear at festivals or b, blocks other NPCs from appearing at festivals, please let me know!
 
-He HAS NOT been fully tested for compatibility for:
+He HAS NOT been tested for compatibility with:
 - Stardew Valley Expanded
 
 The archives of the Archaeology House also contain many new aspects of SDV lore, some relating to my other mods (Mr. Ginger, the Ranch Expansion). **THIS REQUIRES CP 1.14 or HIGHER to work.** If you do not want extra lore, do not poke through the filing cabinets.

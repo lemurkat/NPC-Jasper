@@ -53,4 +53,8 @@ REQUIRES:
 - TMXL
 - Daisy Niko's Tilesheets
 
+FUTURE PLANS:
+- More dialogue from Gunther/Marlon
+- Cross-over content with Charlie
+- Compatibility with other related chars and mods
 

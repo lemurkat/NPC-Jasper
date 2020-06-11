@@ -46,8 +46,6 @@ NOTES:
 
 ** 14-heart scene not yet written/implemented.
 
-** Some aspects surrounding the 6-heart event have not been 100% tested since last tweaking.
-
 ** Marriage Dialogue/8-10 heart dialogue is incomplete.
 
 REQUIRES:
